@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+
+    <link rel="icon" type="image/x-icon" href="./ed-logo.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Principais Vantagens | ED Calhas</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    colors: {
+
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+
+                        industrial: {
+                            950: '#09090b',
+                            900: '#121215',
+                            800: '#1c1c21',
+                            700: '#27272a',
+                            600: '#3f3f46',
+                        }
+
+                    },
+
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+
+                }
+            }
+        }
+    </script>
+
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .orange-glow {
+            text-shadow: 0 0 25px rgba(249, 115, 22, 0.4);
+        }
+
+        .orange-box-shadow {
+            box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.35);
+        }
+
+    </style>
+
+</head>
+
+
+<body class="bg-industrial-950 text-gray-200 antialiased selection:bg-brand-500 selection:text-white">
+
+
+    <!-- ========================================================= -->
+    <!-- HEADER -->
+    <!-- ========================================================= -->
+
+    <header class="sticky top-0 z-50 bg-industrial-900/95 backdrop-blur-md border-b border-industrial-800 text-white">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+
+            <!-- LOGO -->
+
+            <a
+                href="./index.html"
+                class="flex items-center space-x-3 group min-w-max"
+            >
+
+                <img
+                    src="./Logo.png"
+                    alt="ED Calhas"
+                    class="h-10 w-auto object-contain shrink-0"
+                >
+
+
+                <div class="bg-brand-500 text-industrial-950 px-3 py-1.5 rounded-lg font-black text-2xl tracking-wider shadow-md shadow-brand-500/20 group-hover:bg-brand-400 transition-colors shrink-0">
+                    ED
+                </div>
+
+
+                <div class="shrink-0">
+
+                    <span class="text-xl font-extrabold tracking-tight block leading-none text-white whitespace-nowrap">
+                        CALHAS
+                    </span>
+
+                    <span class="text-[10px] text-brand-500 font-bold tracking-widest uppercase block whitespace-nowrap">
+                        Direto da Fábrica
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- ================================================= -->
+            <!-- MENU DESKTOP -->
+            <!-- ================================================= -->
+
+            <nav class="hidden lg:flex space-x-5 text-xs xl:text-sm font-bold text-gray-300">
+
+
+                <a
+                    href="./Sobre.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Sobre
+                </a>
+
+
+                <a
+                    href="./Cores.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Cores
+                </a>
+
+
+                <a
+                    href="./Instalação.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Instalação
+                </a>
+
+
+                <!-- ITEM ATIVO -->
+
+                <a
+                    href="./Vantagens.html"
+                    class="text-brand-500 transition-colors"
+                >
+                    Vantagens
+                </a>
+
+
+                <a
+                    href="./Especificações.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Especificações
+                </a>
+
+
+                <a
+                    href="./Kits.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Kits
+                </a>
+
+
+                <a
+                    href="./Revenda.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Revenda
+                </a>
+
+
+                <a
+                    href="./Contato.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Contato
+                </a>
+
+            </nav>
+
+
+            <!-- ================================================= -->
+            <!-- AÇÕES -->
+            <!-- ================================================= -->
+
+            <div class="flex items-center space-x-3">
+
+
+                <a
+                    href="https://wa.me/5511953991435?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20ED%20FIXPRO."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hidden sm:flex bg-brand-500 hover:bg-brand-600 text-industrial-950 font-extrabold px-4 py-2 rounded-lg text-sm transition-all items-center shadow-lg shadow-brand-500/20"
+                >
+
+                    <i
+                        data-lucide="message-circle"
+                        class="w-4 h-4 mr-2 stroke-[2.5]"
+                    ></i>
+
+                    WhatsApp
+
+                </a>
+
+
+                <!-- BOTÃO MOBILE -->
+
+                <button
+                    id="mobile-menu-btn"
+                    class="lg:hidden p-2 rounded-lg bg-industrial-800 text-gray-300 hover:text-white focus:outline-none"
+                    aria-label="Abrir menu"
+                >
+
+                    <i
+                        data-lucide="menu"
+                        id="menu-icon-open"
+                        class="w-6 h-6"
+                    ></i>
+
+
+                    <i
+                        data-lucide="x"
+                        id="menu-icon-close"
+                        class="w-6 h-6 hidden"
+                    ></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- MENU MOBILE -->
+        <!-- ================================================= -->
+
+        <div
+            id="mobile-menu"
+            class="hidden lg:hidden bg-industrial-900 border-b border-industrial-800 px-4 pt-2 pb-6 space-y-3 font-semibold text-gray-300 text-sm"
+        >
+
+
+            <a
+                href="./Sobre.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Sobre a Tampa Protetora
+            </a>
+
+
+            <a
+                href="./Cores.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Cores e Acabamentos
+            </a>
+
+
+            <a
+                href="./Instalação.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Design & Instalação
+            </a>
+
+
+            <a
+                href="./Vantagens.html"
+                class="block py-2 border-b border-industrial-800/50 text-brand-500 mobile-link"
+            >
+                Principais Vantagens
+            </a>
+
+
+            <a
+                href="./Especificações.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Dados Técnicos
+            </a>
+
+
+            <a
+                href="./Kits.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Opções de Kits
+            </a>
+
+
+            <a
+                href="./Revenda.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Para Revendedores
+            </a>
+
+
+            <a
+                href="./Contato.html"
+                class="block py-2 hover:text-brand-500 mobile-link"
+            >
+                Fale Conosco
+            </a>
+
+
+            <a
+                href="https://wa.me/5511953991435?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20ED%20FIXPRO."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full bg-brand-500 text-industrial-950 font-extrabold py-3 rounded-lg text-center transition-all flex items-center justify-center mt-4"
+            >
+
+                <i
+                    data-lucide="message-circle"
+                    class="w-5 h-5 mr-2 stroke-[2.5]"
+                ></i>
+
+                Faça seu Orçamento
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO DA PÁGINA -->
+    <!-- ========================================================= -->
+
+    <section class="relative bg-industrial-950 text-white py-16 lg:py-20 border-b border-industrial-800 overflow-hidden">
+
+        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:24px_24px]"></div>
+
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto">
+
+
+                <span class="text-brand-500 text-xs font-black uppercase tracking-widest">
+                    Por que escolher a ED Calhas
+                </span>
+
+
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight mt-2">
+                    PRINCIPAIS VANTAGENS
+                </h1>
+
+
+                <div class="w-20 h-1.5 bg-brand-500 mx-auto my-5 rounded-full"></div>
+
+
+                <p class="text-gray-400 text-base sm:text-lg leading-relaxed">
+                    Conheça os diferenciais que tornam a Tampa Protetora
+                    de Parafuso da ED Calhas uma solução para proteção,
+                    acabamento e padronização da sua cobertura.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- PRINCIPAIS VANTAGENS -->
+    <!-- ========================================================= -->
+
+    <section
+        id="vantagens"
+        class="py-20 bg-industrial-950 text-white border-b border-industrial-800"
+    >
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+            <!-- ================================================= -->
+            <!-- TÍTULO -->
+            <!-- ================================================= -->
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+
+                <span class="text-brand-500 text-xs font-black uppercase tracking-widest">
+                    Benefícios do Produto
+                </span>
+
+
+                <h2 class="text-3xl font-black tracking-tight sm:text-4xl mt-1">
+                    POR QUE ESCOLHER A ED CALHAS?
+                </h2>
+
+
+                <div class="w-20 h-1.5 bg-brand-500 mx-auto my-4 rounded-full"></div>
+
+
+                <p class="text-gray-400">
+                    Conheça os principais diferenciais da Tampa Protetora
+                    de Cabeça de Parafuso ED Calhas.
+                </p>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- GRID DE VANTAGENS -->
+            <!-- ================================================= -->
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                <!-- ================================================= -->
+                <!-- 01 - PROTEÇÃO -->
+                <!-- ================================================= -->
+
+                <div class="bg-industrial-900 border border-industrial-800 p-8 rounded-2xl hover:border-brand-500/50 transition-all group">
+
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-6 border border-brand-500/20 group-hover:bg-brand-500 group-hover:text-industrial-950 transition-all">
+
+                        <i
+                            data-lucide="shield-alert"
+                            class="w-6 h-6"
+                        ></i>
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Proteção Contra Intempéries
+                    </h3>
+
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Protege a cabeça do parafuso e a borracha de
+                        vedação contra sol, chuva e corrosão, contribuindo
+                        para preservar a fixação ao longo do tempo.
+                    </p>
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- 02 - PADRONIZAÇÃO -->
+                <!-- ================================================= -->
+
+                <div class="bg-industrial-900 border border-industrial-800 p-8 rounded-2xl hover:border-brand-500/50 transition-all group">
+
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-6 border border-brand-500/20 group-hover:bg-brand-500 group-hover:text-industrial-950 transition-all">
+
+                        <i
+                            data-lucide="layout-grid"
+                            class="w-6 h-6"
+                        ></i>
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Padronização Visual
+                    </h3>
+
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Garante um aspecto limpo, organizado e simétrico
+                        em toda a extensão do telhado ou estrutura metálica.
+                    </p>
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- 03 - ACABAMENTO -->
+                <!-- ================================================= -->
+
+                <div class="bg-industrial-900 border border-industrial-800 p-8 rounded-2xl hover:border-brand-500/50 transition-all group">
+
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-6 border border-brand-500/20 group-hover:bg-brand-500 group-hover:text-industrial-950 transition-all">
+
+                        <i
+                            data-lucide="award"
+                            class="w-6 h-6"
+                        ></i>
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Acabamento Profissional
+                    </h3>
+
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Eleva o nível de entrega dos seus serviços,
+                        contribuindo para um acabamento mais uniforme
+                        e agregando valor ao resultado final.
+                    </p>
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- 04 - MATERIAL -->
+                <!-- ================================================= -->
+
+                <div class="bg-industrial-900 border border-industrial-800 p-8 rounded-2xl hover:border-brand-500/50 transition-all group">
+
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-6 border border-brand-500/20 group-hover:bg-brand-500 group-hover:text-industrial-950 transition-all">
+
+                        <i
+                            data-lucide="hammer"
+                            class="w-6 h-6"
+                        ></i>
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Material Metálico
+                    </h3>
+
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Fabricado em Aço Galvalume, oferecendo uma
+                        alternativa metálica aos protetores produzidos
+                        em plástico.
+                    </p>
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- 05 - CORES -->
+                <!-- ================================================= -->
+
+                <div class="bg-industrial-900 border border-industrial-800 p-8 rounded-2xl hover:border-brand-500/50 transition-all group">
+
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-6 border border-brand-500/20 group-hover:bg-brand-500 group-hover:text-industrial-950 transition-all">
+
+                        <i
+                            data-lucide="palette"
+                            class="w-6 h-6"
+                        ></i>
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Variedade de Cores
+                    </h3>
+
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Opções de acabamentos para combinar com diferentes
+                        cores de telhas e projetos.
+                    </p>
+
+
+                    <a
+                        href="./Cores.html"
+                        class="inline-flex items-center text-brand-500 text-xs font-bold mt-5 hover:text-brand-400 transition-colors"
+                    >
+
+                        Ver cores disponíveis
+
+                        <i
+                            data-lucide="arrow-right"
+                            class="w-4 h-4 ml-1"
+                        ></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- 06 - PROFISSIONAIS -->
+                <!-- ================================================= -->
+
+                <div class="bg-industrial-900 border border-industrial-800 p-8 rounded-2xl hover:border-brand-500/50 transition-all group">
+
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-6 border border-brand-500/20 group-hover:bg-brand-500 group-hover:text-industrial-950 transition-all">
+
+                        <i
+                            data-lucide="truck"
+                            class="w-6 h-6"
+                        ></i>
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Pronto para Profissionais
+                    </h3>
+
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Kits em diferentes quantidades para instaladores
+                        autônomos, calheiros, serralheiros, empresas e
+                        grandes obras.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- DESTAQUE FINAL -->
+            <!-- ================================================= -->
+
+            <div class="mt-12 bg-gradient-to-r from-industrial-900 to-industrial-800 border border-brand-500/20 rounded-2xl p-8">
+
+                <div class="grid md:grid-cols-[auto_1fr] gap-6 items-center">
+
+
+                    <div class="w-14 h-14 rounded-xl bg-brand-500 text-industrial-950 flex items-center justify-center shrink-0">
+
+                        <i
+                            data-lucide="check-check"
+                            class="w-7 h-7"
+                        ></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3 class="text-xl font-black text-white mb-2">
+                            Proteção, Durabilidade e Acabamento Profissional
+                        </h3>
+
+
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            O ED Calhas foi desenvolvido para complementar
+                            a cobertura metálica, protegendo a região da
+                            cabeça do parafuso e proporcionando um acabamento
+                            mais uniforme ao conjunto.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- CTA -->
+    <!-- ========================================================= -->
+
+    <section class="py-16 bg-industrial-900 border-b border-industrial-800">
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+
+            <span class="text-brand-500 text-xs font-black uppercase tracking-widest">
+                ED Calhas
+            </span>
+
+
+            <h2 class="text-3xl sm:text-4xl font-black text-white mt-2">
+                Leve mais proteção e acabamento para sua obra
+            </h2>
+
+
+            <p class="text-gray-400 max-w-2xl mx-auto mt-4 leading-relaxed">
+                Conheça nossas opções de cores e kits ou fale diretamente
+                com a ED Calhas para consultar disponibilidade.
+            </p>
+
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+
+
+                <a
+                    href="./Kits.html"
+                    class="bg-brand-500 hover:bg-brand-600 text-industrial-950 font-black px-7 py-3.5 rounded-xl transition-all shadow-xl shadow-brand-500/20 inline-flex items-center justify-center"
+                >
+
+                    <i
+                        data-lucide="package"
+                        class="w-5 h-5 mr-2"
+                    ></i>
+
+                    Ver Kits
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/5511953991435?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20ED%20FIXPRO."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="border border-industrial-600 hover:border-brand-500 hover:text-brand-500 text-white font-bold px-7 py-3.5 rounded-xl transition-all inline-flex items-center justify-center"
+                >
+
+                    <i
+                        data-lucide="message-circle"
+                        class="w-5 h-5 mr-2"
+                    ></i>
+
+                    Fale Conosco
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================================= -->
+
+    <footer class="bg-industrial-950 border-t border-industrial-800">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+
+                <div class="flex items-center gap-3">
+
+                    <img
+                        src="./Logo.png"
+                        alt="ED Calhas"
+                        class="h-9 w-auto object-contain"
+                    >
+
+
+                    <div>
+
+                        <div class="text-white font-black tracking-tight">
+                            ED CALHAS
+                        </div>
+
+                        <div class="text-brand-500 text-[10px] font-bold uppercase tracking-widest">
+                            Direto da Fábrica
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="text-gray-500 text-xs text-center md:text-right">
+
+                    <p>
+                        Protetor de Cabeça de Parafuso
+                    </p>
+
+                    <p class="mt-1">
+                        © 2026 ED Calhas. Todos os direitos reservados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Inicializa os ícones Lucide
+        lucide.createIcons();
+
+
+        // =========================================================
+        // MENU MOBILE
+        // =========================================================
+
+        const mobileMenuBtn =
+            document.getElementById('mobile-menu-btn');
+
+        const mobileMenu =
+            document.getElementById('mobile-menu');
+
+        const menuIconOpen =
+            document.getElementById('menu-icon-open');
+
+        const menuIconClose =
+            document.getElementById('menu-icon-close');
+
+
+        mobileMenuBtn.addEventListener('click', () => {
+
+            const isHidden =
+                mobileMenu.classList.contains('hidden');
+
+
+            if (isHidden) {
+
+                mobileMenu.classList.remove('hidden');
+
+                menuIconOpen.classList.add('hidden');
+
+                menuIconClose.classList.remove('hidden');
+
+            } else {
+
+                mobileMenu.classList.add('hidden');
+
+                menuIconOpen.classList.remove('hidden');
+
+                menuIconClose.classList.add('hidden');
+
+            }
+
+        });
+
+
+        // =========================================================
+        // FECHAR MENU AO CLICAR EM UM LINK
+        // =========================================================
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+
+            link.addEventListener('click', () => {
+
+                mobileMenu.classList.add('hidden');
+
+                menuIconOpen.classList.remove('hidden');
+
+                menuIconClose.classList.add('hidden');
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

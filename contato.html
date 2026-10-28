@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <link rel="icon" type="image/x-icon" href="./ed-logo.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | EdCalhas Pro</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+
+                        industrial: {
+                            950: '#09090b',
+                            900: '#121215',
+                            800: '#1c1c21',
+                            700: '#27272a',
+                            600: '#3f3f46',
+                        }
+                    },
+
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .orange-glow {
+            text-shadow: 0 0 25px rgba(249, 115, 22, 0.4);
+        }
+
+        .orange-box-shadow {
+            box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-industrial-950 text-gray-200 antialiased selection:bg-brand-500 selection:text-white relative min-h-screen flex flex-col justify-between">
+
+    <!-- ========================================================= -->
+    <!-- HEADER / NAVBAR -->
+    <!-- ========================================================= -->
+
+    <header class="sticky top-0 z-50 bg-industrial-900/95 backdrop-blur-md border-b border-industrial-800 text-white">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+            <!-- LOGO ED CALHAS -->
+            <a href="./index.html" class="flex items-center space-x-3 group min-w-max">
+
+                <!-- Imagem da Logo -->
+                <img
+                    src="./Logo.png"
+                    alt="ED Calhas"
+                    class="h-10 w-auto object-contain shrink-0"
+                >
+
+                <!-- Sigla ED -->
+                <div
+                    class="bg-brand-500 text-industrial-950 px-3 py-1.5 rounded-lg font-black text-2xl tracking-wider shadow-md shadow-brand-500/20 group-hover:bg-brand-400 transition-colors shrink-0"
+                >
+                    ED
+                </div>
+
+                <!-- Texto CALHAS -->
+                <div class="shrink-0">
+
+                    <span
+                        class="text-xl font-extrabold tracking-tight block leading-none text-white whitespace-nowrap"
+                    >
+                        CALHAS
+                    </span>
+
+                    <span
+                        class="text-[10px] text-brand-500 font-bold tracking-widest uppercase block whitespace-nowrap"
+                    >
+                        Direto da Fábrica
+                    </span>
+
+                </div>
+            </a>
+
+
+            <!-- ========================================================= -->
+            <!-- MENU DESKTOP -->
+            <!-- ========================================================= -->
+
+            <nav class="hidden lg:flex space-x-5 text-xs xl:text-sm font-bold text-gray-300">
+
+                <a
+                    href="./Sobre.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Sobre
+                </a>
+
+                <a
+                    href="./Cores.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Cores
+                </a>
+
+                <a
+                    href="./Instalação.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Instalação
+                </a>
+
+                <a
+                    href="./Vantagens.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Vantagens
+                </a>
+
+                <a
+                    href="./Especificações.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Especificações
+                </a>
+
+                <a
+                    href="./Kits.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Kits
+                </a>
+
+                <a
+                    href="./Revenda.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Revenda
+                </a>
+
+                <a
+                    href="./Contato.html"
+                    class="text-brand-500 transition-colors"
+                >
+                    Contato
+                </a>
+
+            </nav>
+
+
+            <!-- ========================================================= -->
+            <!-- AÇÕES DIRETAS + HAMBURGER -->
+            <!-- ========================================================= -->
+
+            <div class="flex items-center space-x-3">
+
+                <!-- WhatsApp Desktop -->
+                <a
+                    href="https://wa.me/5511953991435?text=Olá, eu gostaria de saber mais sobre as Tampas Protetoras de Parafuso."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hidden sm:flex bg-brand-500 hover:bg-brand-600 text-industrial-950 font-extrabold px-4 py-2 rounded-lg text-sm transition-all items-center shadow-lg shadow-brand-500/20"
+                >
+
+                    <i
+                        data-lucide="message-circle"
+                        class="w-4 h-4 mr-2 stroke-[2.5]"
+                    ></i>
+
+                    WhatsApp
+
+                </a>
+
+
+                <!-- Botão Menu Mobile -->
+                <button
+                    id="mobile-menu-btn"
+                    class="lg:hidden p-2 rounded-lg bg-industrial-800 text-gray-300 hover:text-white focus:outline-none"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                >
+
+                    <i
+                        data-lucide="menu"
+                        id="menu-icon-open"
+                        class="w-6 h-6"
+                    ></i>
+
+                    <i
+                        data-lucide="x"
+                        id="menu-icon-close"
+                        class="w-6 h-6 hidden"
+                    ></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ========================================================= -->
+        <!-- MENU MOBILE -->
+        <!-- ========================================================= -->
+
+        <div
+            id="mobile-menu"
+            class="hidden lg:hidden bg-industrial-900 border-b border-industrial-800 px-4 pt-2 pb-6 space-y-3 font-semibold text-gray-300 text-sm"
+        >
+
+            <a
+                href="./Sobre.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Sobre a Tampa Protetora
+            </a>
+
+            <a
+                href="./Cores.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Cores e Acabamentos
+            </a>
+
+            <a
+                href="./Instalação.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Design & Instalação
+            </a>
+
+            <a
+                href="./Vantagens.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Principais Vantagens
+            </a>
+
+            <a
+                href="./Especificações.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Dados Técnicos
+            </a>
+
+            <a
+                href="./Kits.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Opções de Kits
+            </a>
+
+            <a
+                href="./Revenda.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Para Revendedores
+            </a>
+
+            <a
+                href="./Contato.html"
+                class="block py-2 text-brand-500 mobile-link"
+            >
+                Fale Conosco
+            </a>
+
+
+            <!-- WhatsApp Mobile -->
+            <a
+                href="https://wa.me/5511953991435?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20ED%20FIXPRO."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full bg-brand-500 text-industrial-950 font-extrabold py-3 rounded-lg text-center transition-all flex items-center justify-center mt-4"
+            >
+
+                <i
+                    data-lucide="message-circle"
+                    class="w-5 h-5 mr-2 stroke-[2.5]"
+                ></i>
+
+                Faça seu Orçamento
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================================= -->
+    <!-- SEÇÃO CONTATO -->
+    <!-- ========================================================= -->
+
+    <main class="flex-grow flex items-center">
+        <section id="contato" class="w-full bg-industrial-950 text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center mb-12">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="bg-brand-500 text-industrial-950 px-3 py-1 rounded-lg font-black text-xl">
+                                ED
+                            </div>
+                            <span class="text-2xl font-black tracking-tight">CALHAS</span>
+                        </div>
+                        <h2 class="text-3xl font-black tracking-tight mb-3">FALE DIRETO COM A FÁBRICA</h2>
+                        <p class="text-gray-400 text-sm max-w-md leading-relaxed">
+                            Qualidade, precisão e acabamento para a sua obra. Entre em contato conosco para tirar dúvidas, cotar projetos ou realizar pedidos com entrega rápida.
+                        </p>
+                    </div>
+
+                    <div class="bg-industrial-900 p-6 sm:p-8 rounded-2xl border border-industrial-800 space-y-4 shadow-xl">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/5511953991435" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="flex items-center space-x-4 p-4 rounded-xl bg-industrial-950 hover:bg-industrial-800 border border-industrial-800 transition-colors">
+                            <div class="w-12 h-12 bg-emerald-500/10 text-emerald-500 rounded-lg flex items-center justify-center shrink-0 border border-emerald-500/20">
+                                <i data-lucide="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400 block font-bold uppercase">WhatsApp Direto</span>
+                                <span class="text-lg font-extrabold text-white">+55 (11) 95399-1435</span>
+                            </div>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:edcalhasltda@gmail.com" 
+                           class="flex items-center space-x-4 p-4 rounded-xl bg-industrial-950 hover:bg-industrial-800 border border-industrial-800 transition-colors">
+                            <div class="w-12 h-12 bg-brand-500/10 text-brand-500 rounded-lg flex items-center justify-center shrink-0 border border-brand-500/20">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400 block font-bold uppercase">E-mail Comercial</span>
+                                <span class="text-lg font-extrabold text-white">edcalhasltda@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <!-- Endereço -->
+                        <a href="https://maps.google.com/?q=Rua+Benedito+Fagundes+Marqu%C3%AAs+620+07801-010" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="flex items-center space-x-4 p-4 rounded-xl bg-industrial-950 hover:bg-industrial-800 border border-industrial-800 transition-colors">
+                            <div class="w-12 h-12 bg-brand-500/10 text-brand-500 rounded-lg flex items-center justify-center shrink-0 border border-brand-500/20">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400 block font-bold uppercase">Endereço</span>
+                                <span class="text-sm font-extrabold text-white block">Rua Benedito Fagundes Marquês, N° 620</span>
+                                <span class="text-xs text-gray-400 block">CEP 07801-010</span>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                    </div>
+        </section>
+    </main>
+
+
+    <!-- ========================================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================================= -->
+
+    <footer class="bg-industrial-950 border-t border-industrial-800">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+                <div class="flex items-center gap-3">
+
+                    <img
+                        src="./Logo.png"
+                        alt="ED Calhas"
+                        class="h-9 w-auto object-contain"
+                    >
+
+                    <div>
+
+                        <div class="text-white font-black tracking-tight">
+                            ED CALHAS
+                        </div>
+
+                        <div class="text-brand-500 text-[10px] font-bold uppercase tracking-widest">
+                            Direto da Fábrica
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="text-gray-500 text-xs text-center md:text-right">
+
+                    <p>
+                        Protetor de Cabeça de Parafuso
+                    </p>
+
+                    <p class="mt-1">
+                        © 2026 ED Calhas. Todos os direitos reservados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================================= -->
+
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isClosed = mobileMenu.classList.contains('hidden');
+
+            if (isClosed) {
+                mobileMenu.classList.remove('hidden');
+                menuIconOpen.classList.add('hidden');
+                menuIconClose.classList.remove('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', 'true');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+</body>
+</html>

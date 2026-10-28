@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+
+    <link rel="icon" type="image/x-icon" href="./ed-logo.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instalação</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    colors: {
+
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+
+                        industrial: {
+                            950: '#09090b',
+                            900: '#121215',
+                            800: '#1c1c21',
+                            700: '#27272a',
+                            600: '#3f3f46',
+                        }
+
+                    },
+
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+
+                }
+            }
+        }
+    </script>
+
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .orange-glow {
+            text-shadow: 0 0 25px rgba(249, 115, 22, 0.4);
+        }
+
+        .orange-box-shadow {
+            box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.35);
+        }
+
+    </style>
+
+</head>
+
+
+<body class="bg-industrial-950 text-gray-200 antialiased selection:bg-brand-500 selection:text-white">
+
+
+    <!-- ========================================================= -->
+    <!-- HEADER -->
+    <!-- ========================================================= -->
+
+    <header class="sticky top-0 z-50 bg-industrial-900/95 backdrop-blur-md border-b border-industrial-800 text-white">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+
+            <!-- LOGO -->
+
+            <a
+                href="./index.html"
+                class="flex items-center space-x-3 group min-w-max"
+            >
+
+                <img
+                    src="./Logo.png"
+                    alt="ED Calhas"
+                    class="h-10 w-auto object-contain shrink-0"
+                >
+
+
+                <div class="bg-brand-500 text-industrial-950 px-3 py-1.5 rounded-lg font-black text-2xl tracking-wider shadow-md shadow-brand-500/20 group-hover:bg-brand-400 transition-colors shrink-0">
+                    ED
+                </div>
+
+
+                <div class="shrink-0">
+
+                    <span class="text-xl font-extrabold tracking-tight block leading-none text-white whitespace-nowrap">
+                        CALHAS
+                    </span>
+
+                    <span class="text-[10px] text-brand-500 font-bold tracking-widest uppercase block whitespace-nowrap">
+                        Direto da Fábrica
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- ================================================= -->
+            <!-- MENU DESKTOP -->
+            <!-- ================================================= -->
+
+            <nav class="hidden lg:flex space-x-5 text-xs xl:text-sm font-bold text-gray-300">
+
+
+                <a
+                    href="./Sobre.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Sobre
+                </a>
+
+
+                <a
+                    href="./Cores.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Cores
+                </a>
+
+
+                <!-- ITEM ATIVO -->
+
+                <a
+                    href="./Instalação.html"
+                    class="text-brand-500 transition-colors"
+                >
+                    Instalação
+                </a>
+
+
+                <a
+                    href="./Vantagens.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Vantagens
+                </a>
+
+
+                <a
+                    href="./Especificações.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Especificações
+                </a>
+
+
+                <a
+                    href="./Kits.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Kits
+                </a>
+
+
+                <a
+                    href="./Revenda.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Revenda
+                </a>
+
+
+                <a
+                    href="./Contato.html"
+                    class="hover:text-brand-500 transition-colors"
+                >
+                    Contato
+                </a>
+
+            </nav>
+
+
+            <!-- ================================================= -->
+            <!-- AÇÕES -->
+            <!-- ================================================= -->
+
+            <div class="flex items-center space-x-3">
+
+
+                <a
+                   href="https://wa.me/5511953991435?text=Olá, gostaria de saber mais sobre as Tampas Protetoras de Cabeça de Parafuso."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hidden sm:flex bg-brand-500 hover:bg-brand-600 text-industrial-950 font-extrabold px-4 py-2 rounded-lg text-sm transition-all items-center shadow-lg shadow-brand-500/20"
+                >
+
+                    <i
+                        data-lucide="message-circle"
+                        class="w-4 h-4 mr-2 stroke-[2.5]"
+                    ></i>
+
+                    WhatsApp
+
+                </a>
+
+
+                <!-- BOTÃO MOBILE -->
+
+                <button
+                    id="mobile-menu-btn"
+                    class="lg:hidden p-2 rounded-lg bg-industrial-800 text-gray-300 hover:text-white focus:outline-none"
+                    aria-label="Abrir menu"
+                >
+
+                    <i
+                        data-lucide="menu"
+                        id="menu-icon-open"
+                        class="w-6 h-6"
+                    ></i>
+
+
+                    <i
+                        data-lucide="x"
+                        id="menu-icon-close"
+                        class="w-6 h-6 hidden"
+                    ></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- MENU MOBILE -->
+        <!-- ================================================= -->
+
+        <div
+            id="mobile-menu"
+            class="hidden lg:hidden bg-industrial-900 border-b border-industrial-800 px-4 pt-2 pb-6 space-y-3 font-semibold text-gray-300 text-sm"
+        >
+
+
+            <a
+                href="./Sobre.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Sobre a Tampa Protetora
+            </a>
+
+
+            <a
+                href="./Cores.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Cores e Acabamentos
+            </a>
+
+
+            <a
+                href="./Instalação.html"
+                class="block py-2 border-b border-industrial-800/50 text-brand-500 mobile-link"
+            >
+                Design & Instalação
+            </a>
+
+
+            <a
+                href="./Vantagens.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Principais Vantagens
+            </a>
+
+
+            <a
+                href="./Especificações.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Dados Técnicos
+            </a>
+
+
+            <a
+                href="./Kits.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Opções de Kits
+            </a>
+
+
+            <a
+                href="./Revenda.html"
+                class="block py-2 border-b border-industrial-800/50 hover:text-brand-500 mobile-link"
+            >
+                Para Revendedores
+            </a>
+
+
+            <a
+                href="./Contato.html"
+                class="block py-2 hover:text-brand-500 mobile-link"
+            >
+                Fale Conosco
+            </a>
+
+
+            <a
+               href="https://wa.me/5511953991435?text=Olá, gostaria de saber mais sobre as Tampas Protetoras de Cabeça de Parafuso."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full bg-brand-500 text-industrial-950 font-extrabold py-3 rounded-lg text-center transition-all flex items-center justify-center mt-4"
+            >
+
+                <i
+                    data-lucide="message-circle"
+                    class="w-5 h-5 mr-2 stroke-[2.5]"
+                ></i>
+
+                Faça seu Orçamento
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================================= -->
+    <!-- CABEÇALHO DA PÁGINA -->
+    <!-- ========================================================= -->
+
+    <section class="relative bg-industrial-950 text-white py-16 lg:py-20 border-b border-industrial-800 overflow-hidden">
+
+        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:24px_24px]"></div>
+
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto">
+
+
+                <span class="text-brand-500 text-xs font-black uppercase tracking-widest">
+                    Prático e Rápido
+                </span>
+
+
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight mt-2">
+                    Instalação da Tampa Protetora de Parafuso
+                </h1>
+
+
+                <div class="w-20 h-1.5 bg-brand-500 mx-auto my-5 rounded-full"></div>
+
+
+                <p class="text-gray-400 text-base sm:text-lg leading-relaxed">
+                    Aprenda como instalar o protetor de cabeça de parafuso
+                    ED Calhas de forma simples, rápida e eficiente.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- INSTALAÇÃO -->
+    <!-- ========================================================= -->
+
+    <section
+        id="instalacao"
+        class="py-20 bg-industrial-900 text-white border-b border-industrial-800"
+    >
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+            <!-- ================================================= -->
+            <!-- TÍTULO -->
+            <!-- ================================================= -->
+
+            <div class="text-center max-w-3xl mx-auto mb-12">
+
+                <span class="text-brand-500 text-xs font-black uppercase tracking-widest block mb-2">
+                    Prático e Rápido
+                </span>
+
+
+                <h2 class="text-3xl font-black tracking-tight sm:text-4xl mt-1">
+                    Passo a passo da Instalação
+                </h2>
+
+
+                <div class="w-20 h-1.5 bg-brand-500 mx-auto my-4 rounded-full"></div>
+
+
+                <p class="text-gray-400">
+                    Aplicação simples, rápida e extremamente intuitiva.
+                </p>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- VÍDEO -->
+            <!-- ================================================= -->
+
+            <div class="max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden border border-industrial-800 bg-industrial-950 shadow-2xl">
+
+                <div class="relative w-full aspect-video">
+
+                    <video
+                        class="w-full h-full object-cover"
+                        controls
+                        preload="metadata"
+                        poster="./caminho-da-imagem-de-capa.jpg"
+                    >
+
+                        <source
+                            src="./Video.mp4"
+                            type="video/mp4"
+                        >
+
+                        Seu navegador não suporta a exibição deste vídeo.
+
+                    </video>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- PASSOS -->
+            <!-- ================================================= -->
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+                <!-- ================================================= -->
+                <!-- PASSO 01 -->
+                <!-- ================================================= -->
+
+                <div class="bg-industrial-950 p-6 rounded-2xl border border-industrial-800 relative hover:border-brand-500/40 transition-all group">
+
+                    <span class="text-5xl font-black text-industrial-800 absolute top-4 right-4 select-none">
+                        01
+                    </span>
+
+
+                    <div class="w-10 h-10 bg-brand-500 text-industrial-950 font-black rounded-lg flex items-center justify-center mb-4">
+                        1
+                    </div>
+
+
+                    <h3 class="text-lg font-bold text-white mb-2">
+                        LIMPEZA
+                    </h3>
+
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Limpe a área ao redor da cabeça do parafuso,
+                        removendo toda poeira, graxa, óleo ou sujeira
+                        para melhor aderência.
+                    </p>
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- PASSO 02 -->
+                <!-- ================================================= -->
+
+                <div class="bg-industrial-950 p-6 rounded-2xl border border-industrial-800 relative hover:border-brand-500/40 transition-all group">
+
+                    <span class="text-5xl font-black text-industrial-800 absolute top-4 right-4 select-none">
+                        02
+                    </span>
+
+
+                    <div class="w-10 h-10 bg-brand-500 text-industrial-950 font-black rounded-lg flex items-center justify-center mb-4">
+                        2
+                    </div>
+
+
+                    <h3 class="text-lg font-bold text-white mb-2">
+                        APLICAÇÃO DO PU
+                    </h3>
+
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Aplique um cordão de adesivo PU na área.
+                        A borda ondulada e aba da Tampa Protetora
+                        reterão o selante com eficiência.
+                    </p>
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- PASSO 03 -->
+                <!-- ================================================= -->
+
+                <div class="bg-industrial-950 p-6 rounded-2xl border border-industrial-800 relative hover:border-brand-500/40 transition-all group">
+
+                    <span class="text-5xl font-black text-industrial-800 absolute top-4 right-4 select-none">
+                        03
+                    </span>
+
+
+                    <div class="w-10 h-10 bg-brand-500 text-industrial-950 font-black rounded-lg flex items-center justify-center mb-4">
+                        3
+                    </div>
+
+
+                    <h3 class="text-lg font-bold text-white mb-2">
+                        ENCAIXE
+                    </h3>
+
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Posicione a Tampa Protetora centralizada sobre a
+                        cabeça do parafuso e pressione levemente
+                        para travar o protetor.
+                    </p>
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- PASSO 04 -->
+                <!-- ================================================= -->
+
+                <div class="bg-industrial-950 p-6 rounded-2xl border border-industrial-800 relative hover:border-brand-500/40 transition-all group">
+
+                    <span class="text-5xl font-black text-industrial-800 absolute top-4 right-4 select-none">
+                        04
+                    </span>
+
+
+                    <div class="w-10 h-10 bg-brand-500 text-industrial-950 font-black rounded-lg flex items-center justify-center mb-4">
+                        4
+                    </div>
+
+
+                    <h3 class="text-lg font-bold text-white mb-2">
+                        CURA
+                    </h3>
+
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Aguarde o tempo de cura indicado pelo fabricante
+                        do adesivo PU utilizado para estanqueidade e
+                        fixação total.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- OBSERVAÇÃO -->
+            <!-- ================================================= -->
+
+            <div class="mt-10 max-w-4xl mx-auto">
+
+                <div class="flex items-start gap-4 rounded-2xl border border-brand-500/20 bg-industrial-950 px-6 py-5">
+
+                    <div class="w-10 h-10 shrink-0 rounded-lg bg-brand-500/10 border border-brand-500/20 flex items-center justify-center">
+
+                        <i
+                            data-lucide="info"
+                            class="w-5 h-5 text-brand-500"
+                        ></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3 class="font-bold text-white mb-1">
+                            Atenção durante a instalação
+                        </h3>
+
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Para obter uma boa fixação, certifique-se de que
+                            a superfície esteja limpa e seca e utilize um
+                            adesivo PU adequado para a aplicação.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- CTA -->
+    <!-- ========================================================= -->
+
+    <section class="py-16 bg-industrial-950 border-b border-industrial-800">
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+
+            <span class="text-brand-500 text-xs font-black uppercase tracking-widest">
+                Pronto para instalar?
+            </span>
+
+
+            <h2 class="text-3xl sm:text-4xl font-black text-white mt-2">
+                Tenha um acabamento profissional no seu telhado
+            </h2>
+
+
+            <p class="text-gray-400 max-w-2xl mx-auto mt-4 leading-relaxed">
+                Conheça nossas opções de kits e escolha a quantidade
+                ideal para o seu projeto.
+            </p>
+
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+
+
+                <a
+                    href="./Kits.html"
+                    class="bg-brand-500 hover:bg-brand-600 text-industrial-950 font-black px-7 py-3.5 rounded-xl transition-all shadow-xl shadow-brand-500/20 inline-flex items-center justify-center"
+                >
+
+                    <i
+                        data-lucide="package"
+                        class="w-5 h-5 mr-2"
+                    ></i>
+
+                    Ver Kits
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/5511953991435?text=Olá, gostaria de saber mais sobre as Tampas Protetoras de Cabeça de Parafuso."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="border border-industrial-600 hover:border-brand-500 hover:text-brand-500 text-white font-bold px-7 py-3.5 rounded-xl transition-all inline-flex items-center justify-center"
+                >
+
+                    <i
+                        data-lucide="message-circle"
+                        class="w-5 h-5 mr-2"
+                    ></i>
+
+                    Fale Conosco
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================================= -->
+
+    <footer class="bg-industrial-950 border-t border-industrial-800">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+
+                <div class="flex items-center gap-3">
+
+                    <img
+                        src="./Logo.png"
+                        alt="ED Calhas"
+                        class="h-9 w-auto object-contain"
+                    >
+
+
+                    <div>
+
+                        <div class="text-white font-black tracking-tight">
+                            ED CALHAS
+                        </div>
+
+                        <div class="text-brand-500 text-[10px] font-bold uppercase tracking-widest">
+                            Direto da Fábrica
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="text-gray-500 text-xs text-center md:text-right">
+
+                    <p>
+                        Protetor de Cabeça de Parafuso
+                    </p>
+
+                    <p class="mt-1">
+                        © 2026 ED Calhas. Todos os direitos reservados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================================= -->
+
+    <script>
+
+        // Inicializa os ícones Lucide
+        lucide.createIcons();
+
+
+        // =========================================================
+        // MENU MOBILE
+        // =========================================================
+
+        const mobileMenuBtn =
+            document.getElementById('mobile-menu-btn');
+
+        const mobileMenu =
+            document.getElementById('mobile-menu');
+
+        const menuIconOpen =
+            document.getElementById('menu-icon-open');
+
+        const menuIconClose =
+            document.getElementById('menu-icon-close');
+
+
+        mobileMenuBtn.addEventListener('click', () => {
+
+            const isHidden =
+                mobileMenu.classList.contains('hidden');
+
+
+            if (isHidden) {
+
+                mobileMenu.classList.remove('hidden');
+
+                menuIconOpen.classList.add('hidden');
+
+                menuIconClose.classList.remove('hidden');
+
+            } else {
+
+                mobileMenu.classList.add('hidden');
+
+                menuIconOpen.classList.remove('hidden');
+
+                menuIconClose.classList.add('hidden');
+
+            }
+
+        });
+
+
+        // =========================================================
+        // FECHAR MENU AO CLICAR EM LINK
+        // =========================================================
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+
+            link.addEventListener('click', () => {
+
+                mobileMenu.classList.add('hidden');
+
+                menuIconOpen.classList.remove('hidden');
+
+                menuIconClose.classList.add('hidden');
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
